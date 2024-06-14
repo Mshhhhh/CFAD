@@ -1,0 +1,184 @@
+body {
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px 1px 0px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    margin-left: 1rem;
+    padding: 1px 3px;
+    font-size: 20px;
+}
+
+.header img {
+    height: 80px;
+}
+
+.nav {
+    margin-right: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.nav .share-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 80px; /* To prevent cards from being hidden under the fixed header */
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    height: 450px; /* Increased height to accommodate the additional info */
+    transition: transform 0.3s, height 0.3s;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.short-info, .more-info, .more-info1 {
+    margin: 10px 0;
+}
+
+.more-info, .more-info1 {
+    display: none;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    height: auto;
+}
+
+.card:hover .more-info {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.card:hover .more-info1 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+/* 기존 스타일에 추가 */
+/* 기존 스타일에 추가 */
+
+.message-container {
+    text-align: center;
+    margin: 40px 20px 20px 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form label,
+.modal form input,
+.modal form textarea,
+.modal form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.modal form textarea {
+    height: 100px;
+    resize: none;
+}

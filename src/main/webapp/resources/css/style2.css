@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'AppleSDGothicNeoB';
+    src: url('../fonts/AppleSDGothicNeoB.woff') format('woff'); /* 폰트 파일 위치와 포맷 지정 */
+}
+body {
+    font-family: 'AppleSDGothicNeoB', sans-serif; 
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px 1px 0px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header a {
+    color: black;
+    text-decoration: none;
+    margin-left: 1rem;
+    padding: 1px 3px;
+    font-size: 20px;
+}
+.header img {
+    height: 80px;
+}
+.nav {
+    margin-right:1px;
+    display:flex;
+    align-items : center;
+}
+
+.slider-wrapper {    
+    display: flex;
+    align-items: CENTER;
+}
+
+#prev, #next {
+    background-color: #f0f0;
+    color: #fff;
+    border: none;
+    margin: 10px 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#prev img, #next img {
+    max-width: 40px; /* Adjust the size as needed */
+    max-height: 40px; /* Adjust the size as needed */
+}
+
+.slider-container {
+    padding-top: 100px;
+    width: 800px; /* Ensure the container is wider to show partial next slides */
+    height :600px;
+    overflow:hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: 90%;
+}
+
+.slide {
+    min-width: 485px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+
+.rectangle {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.rectangle-image {
+    width: 80%;
+    height: auto;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+}
+
+
+.content {
+    text-align: center;
+    color: #000;
+}
+
+.text {
+    font-size: 24px;
+    margin: center;
+}
+
+.action-btn {
+    margin-bottom:50px;
+    padding: 10px 10px 10px 10px;
+    background-color: #000;
+    color: #FFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* Remove default link styling */
+.action-link {
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.action-link:hover {
+    color: #FFD700;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 10px 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+.active .rectangle {
+    width: 500px;
+    height: 600px;
+}
+
+@media (max-width: 1020px) {
+    .slider-container {
+        width: 100%;
+    }
+    .slide {
+        min-width: calc(100vw - 200px);
+    }
+    .rectangle {
+        width: calc(100vw - 20px);
+        height: 40px;
+    }
+}
