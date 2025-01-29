@@ -74,6 +74,7 @@ Deep Learning을 이용하여 감정인식 기반의 칵테일 추천
 ## 4. 참고 자료
 - AI데이터 허브
 - OpneCV
+- deepface
 - Pytorch
 - Wikipedia
 - Google Image
