@@ -18,24 +18,31 @@ Deep Learning을 이용하여 감정인식 기반의 칵테일 추천
 
 ### 2.1 프로젝트 구조
 웹사이트 기반 감정인식 칵테일 추천 시스템
+
 ![image](https://github.com/user-attachments/assets/48156a85-d11a-48c8-aa5f-66225561ffcd)
 
 ### 2.2 프로젝트 결과물
 - **시작화면**
+  
 ![image](https://github.com/user-attachments/assets/0b99df02-b333-44b8-8909-75f18bb656e7)
 
 - **메인 페이지**: 사용자의 이름 입력
+  
 ![image](https://github.com/user-attachments/assets/d9044af4-4bb9-4174-8c28-6d8663b9878b)
 
 - **감정인식 및 선호도 조사**: AI 기반 감정 조사 또는 직접 선호도 입력
+  
 ![image](https://github.com/user-attachments/assets/ca164dc8-4c20-4df7-bec5-38db0f841609)
 - 웹캠이나 외부 카메라에 연결하여 유저의 얼굴 사진을 입력받을 수 있도록 함
+  
 ![image](https://github.com/user-attachments/assets/56a5d962-189b-4c8c-a895-5e9aad0f71fa)
 
 - **칵테일 추천**: 입력받은 데이터를 바탕으로 최적의 칵테일 추천
+  
 ![image](https://github.com/user-attachments/assets/07fe09ca-12cd-4edd-beaa-7bbbd1b19bb5)
 
 - **세부 정보 제공**: 칵테일 위에 커서를 올리면 도수, 베이스 등의 정보 표시
+  
 ![image](https://github.com/user-attachments/assets/1fc58826-a843-487c-bfc6-3c961109b6fb)
 
 ---
