@@ -4,8 +4,6 @@
 https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=82
 - AI hub에서 데이터를 다운로드 받아서 데이터셋을 활용했습니다. 
 
-# 컴공 캡스톤 진행상황 - 1
-
 ## 데이터셋 재구축
 - AI Hub에서 다운로드한 데이터가 40만 개를 넘지만, 해당 사진에 문제가 있음 발견.
 - 전처리를 위해 기본적인 `.json`에 담겨있는 box 좌표를 이용하려 했으나, 좌표가 제대로 찍히지 않는 문제 발생.
